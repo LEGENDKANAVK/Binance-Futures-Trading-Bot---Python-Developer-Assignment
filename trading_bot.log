@@ -1,0 +1,40 @@
+2025-07-08 14:24:53 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:24:53 - TradingBot - INFO - Placing order with parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2025-07-08 14:25:00 - TradingBot - ERROR - Binance API Error: 400 - Timestamp for this request is outside of the recvWindow.
+2025-07-08 14:25:45 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:25:45 - TradingBot - INFO - Placing order with parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2025-07-08 14:25:49 - TradingBot - INFO - Successfully placed order: {'orderId': 5222249986, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'oAYMkTiRxE1LTq0bMFSCeg', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751964949568}
+2025-07-08 14:26:12 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:26:12 - TradingBot - INFO - Placing order with parameters: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 2550.0, 'timeInForce': 'GTC'}
+2025-07-08 14:26:13 - TradingBot - INFO - Successfully placed order: {'orderId': 4806767326, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'frTIW8mUYXb2EPV7y8MNTi', 'price': '2550.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751964973175}
+2025-07-08 14:26:36 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:26:36 - TradingBot - INFO - Placing order with parameters: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 2550.0, 'timeInForce': 'GTC'}
+2025-07-08 14:26:49 - TradingBot - ERROR - Binance API Error: 400 - Timestamp for this request is outside of the recvWindow.
+2025-07-08 14:27:28 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:27:28 - TradingBot - INFO - Placing order with parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP', 'quantity': 0.001, 'price': 83050.0, 'stopPrice': 83000.0, 'timeInForce': 'GTC'}
+2025-07-08 14:27:33 - TradingBot - ERROR - Binance API Error: 400 - Order's notional must be no smaller than 100 (unless you choose reduce only).
+2025-07-08 14:28:55 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:28:55 - TradingBot - INFO - Placing order with parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2025-07-08 14:28:56 - TradingBot - INFO - Successfully placed order: {'orderId': 5222260335, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'YBzDITdLWbYVP2EpJcHJBk', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751965136226}
+2025-07-08 14:29:22 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:29:22 - TradingBot - INFO - Placing order with parameters: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.05}
+2025-07-08 14:29:27 - TradingBot - ERROR - Binance API Error: 400 - Timestamp for this request is outside of the recvWindow.
+2025-07-08 14:29:36 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:29:36 - TradingBot - INFO - Placing order with parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.002, 'price': 63000.0, 'timeInForce': 'GTC'}
+2025-07-08 14:29:38 - TradingBot - INFO - Successfully placed order: {'orderId': 5222262641, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'h8bY88dz4Jaj6XvYA1VJMf', 'price': '63000.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751965177787}
+2025-07-08 14:30:24 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:30:24 - TradingBot - INFO - Placing order with parameters: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.05, 'price': 2550.0, 'timeInForce': 'GTC'}
+2025-07-08 14:30:25 - TradingBot - INFO - Successfully placed order: {'orderId': 4806777841, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'EXEWKGrjy1aRT1XnVpQZvh', 'price': '2550.00', 'avgPrice': '0.00', 'origQty': '0.050', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751965224973}
+2025-07-08 14:30:37 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:30:37 - TradingBot - INFO - Placing order with parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP', 'quantity': 0.002, 'price': 65050.0, 'stopPrice': 65000.0, 'timeInForce': 'GTC'}
+2025-07-08 14:30:39 - TradingBot - ERROR - Binance API Error: 400 - Order would immediately trigger.
+2025-07-08 14:40:02 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:40:02 - TradingBot - INFO - Bot initialized successfully for the web UI.
+2025-07-08 14:40:04 - TradingBot - INFO - Bot initialized for Binance Futures Testnet.
+2025-07-08 14:40:04 - TradingBot - INFO - Bot initialized successfully for the web UI.
+2025-07-08 14:40:35 - TradingBot - INFO - Placing order with parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0}
+2025-07-08 14:40:37 - TradingBot - INFO - Successfully placed order: {'orderId': 5222302232, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'BwN1OyF1jgiNjWWVe6fxf8', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.000', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751965836821}
+2025-07-08 14:41:15 - TradingBot - INFO - Placing order with parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 2.0, 'price': 4.0, 'timeInForce': 'GTC'}
+2025-07-08 14:41:16 - TradingBot - ERROR - Binance API Error: 400 - Price less than min price.
+2025-07-08 14:41:45 - TradingBot - INFO - Placing order with parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 3.0, 'price': 10.0, 'timeInForce': 'GTC'}
+2025-07-08 14:41:45 - TradingBot - ERROR - Binance API Error: 400 - Price less than min price.
