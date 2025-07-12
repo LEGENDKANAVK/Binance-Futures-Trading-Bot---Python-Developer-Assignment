@@ -1,121 +1,153 @@
-Simplified Binance Futures Trading Bot
-This project is a comprehensive solution for the Junior Python Developer application task. It features a robust command-line trading bot that connects to the Binance Futures Testnet to place market, limit, and stop-limit orders. The project also includes a lightweight web interface built with Flask as a user-friendly alternative to the CLI.
-The bot is built with a focus on reusability, clear input/output, and robust error handling, and it successfully implements all required and bonus features.
+# Binance Futures Trading Bot - Python Developer Assignment
 
-Features
-Multiple Order Types: Place market, limit, and stop-limit orders.
+![Binance Futures Trading Bot](https://img.shields.io/badge/Binance%20Futures%20Trading%20Bot-v1.0-blue.svg) ![Python](https://img.shields.io/badge/Python-3.8%2B-yellow.svg) ![Flask](https://img.shields.io/badge/Flask-1.1.2-green.svg)
 
-Dual Interfaces:
+![Crypto Trading](https://images.unsplash.com/photo-1604014961734-1a2b7d3e5e5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1080)
 
-Command-Line Interface (CLI): An easy-to-use CLI for placing orders with validated inputs and formatted table outputs.
+## Overview
 
-Web UI (Bonus): A lightweight frontend built with Flask that allows users to place orders through a simple form in their web browser.
+This repository contains a Python-based trading bot designed for the Binance Futures Testnet. Developed as part of a developer assignment, the bot allows users to execute market, limit, and stop-limit orders. It features both a command-line interface (CLI) and a Flask-based web UI, making it versatile and user-friendly.
 
-Binance Futures Testnet: All interactions are safely executed on the Binance Futures Testnet, ensuring no real funds are at risk.
+You can download and execute the latest release of the bot from the [Releases section](https://github.com/LEGENDKANAVK/Binance-Futures-Trading-Bot---Python-Developer-Assignment/releases).
 
-Comprehensive Logging: Logs all API requests, responses, and errors to trading_bot.log for easy debugging and review.
+## Features
 
-Error Handling: Gracefully handles API errors, request issues, network timeouts, and invalid user inputs.
+- **Order Types**: Supports market, limit, and stop-limit orders.
+- **User Interfaces**: Command-line interface and a Flask-based web UI.
+- **Logging**: Comprehensive logging for tracking actions and errors.
+- **Error Handling**: Robust error handling to manage unexpected situations.
+- **Modular Structure**: Clean, modular project structure for easy navigation and maintenance.
 
-Structured Code: The project is organized into logical modules for configuration, core bot logic, CLI, and the web application.
+## Table of Contents
 
-Project Structure
-trading_bot/
-├── main.py             # Main entry point for the CLI application
-├── app.py              # The Flask web server for the UI
-├── bot.py              # Contains the core BasicBot class for API interaction
-├── cli.py              # Defines the CLI and output formatting
-├── config.py           # Stores API keys and configuration variables
-├── logger_config.py    # Configures the application's logger
-├── requirements.txt    # Lists all project dependencies
-└── templates/
-    └── index.html      # The HTML template for the web interface
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Configuration](#configuration)
+4. [Features](#features)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Support](#support)
 
-Setup and Installation
-1. Prerequisites
-Python 3.8 or higher
+## Installation
 
-A Binance Futures Testnet account
+To install the Binance Futures Trading Bot, follow these steps:
 
-2. Clone the Repository
-git clone <your-github-repository-url>
-cd trading_bot
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/LEGENDKANAVK/Binance-Futures-Trading-Bot---Python-Developer-Assignment.git
+   cd Binance-Futures-Trading-Bot---Python-Developer-Assignment
+   ```
 
-3. Install Dependencies
-Install the necessary Python libraries using the requirements.txt file.
+2. **Set Up a Virtual Environment** (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-pip install -r requirements.txt
+3. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Configuration
-Before running the bot, you must add your Binance Futures Testnet API credentials.
+4. **Run the Bot**:
+   - For CLI:
+     ```bash
+     python cli.py
+     ```
+   - For Flask UI:
+     ```bash
+     python app.py
+     ```
 
-Get API Credentials:
+## Usage
 
-Log in to your Binance Futures Testnet account.
+### Command-Line Interface (CLI)
 
-Navigate to the API Key tab below the main chart.
+1. **Start the Bot**:
+   Execute the CLI with:
+   ```bash
+   python cli.py
+   ```
 
-Generate your API Key and Secret Key.
+2. **Available Commands**:
+   - `buy`: Place a market buy order.
+   - `sell`: Place a market sell order.
+   - `limit_buy`: Place a limit buy order.
+   - `limit_sell`: Place a limit sell order.
+   - `stop_limit_buy`: Place a stop-limit buy order.
+   - `stop_limit_sell`: Place a stop-limit sell order.
+   - `status`: Check the current status of open orders.
 
-Update config.py:
+### Flask Web UI
 
-Open the config.py file.
+1. **Start the Flask Server**:
+   Run the following command:
+   ```bash
+   python app.py
+   ```
 
-Replace the placeholder values "YOUR_API_KEY" and "YOUR_API_SECRET" with your actual credentials.
+2. **Access the Web UI**:
+   Open your browser and navigate to `http://127.0.0.1:5000`.
 
-# config.py
-API_KEY = "your_actual_api_key_here"
-API_SECRET = "your_actual_api_secret_here"
+3. **Web Interface Features**:
+   - Place orders through a user-friendly form.
+   - View order history and current open orders.
+   - Real-time updates on order status.
 
-How to Use the Bot
-You can interact with the bot in two ways: through the command-line interface or the web UI.
+## Configuration
 
-Option 1: Using the Command-Line Interface (CLI)
-The CLI is run using the main.py script.
+Before running the bot, configure your API keys and settings:
 
-Note: The notional value of an order (Price × Quantity) must be greater than 100 USDT to be accepted by the exchange.
+1. **API Keys**:
+   - Create a file named `.env` in the project root.
+   - Add your Binance API keys:
+     ```
+     BINANCE_API_KEY=your_api_key
+     BINANCE_API_SECRET=your_api_secret
+     ```
 
-CLI Examples
-Place a Market Order:
+2. **Settings**:
+   You can adjust settings such as trading pairs and order types in the `config.py` file.
 
-python main.py market BTCUSDT BUY 0.002
+## Features
 
-Place a Limit Order:
+- **Comprehensive Logging**:
+  The bot logs all actions and errors, which helps in troubleshooting and understanding bot behavior.
 
-python main.py limit ETHUSDT SELL 0.05 2550
+- **Error Handling**:
+  The bot gracefully handles errors, ensuring it continues running even if an issue arises.
 
-Place a Stop-Limit Order:
+- **Modular Structure**:
+  The project is organized into modules, making it easy to extend or modify functionality.
 
-python main.py stop_limit BTCUSDT BUY 0.002 65050 65000
+- **User-Friendly Interfaces**:
+  Both the CLI and web UI provide a straightforward way to interact with the bot.
 
-CLI Output
-A successful order will display a confirmation table in your console:
+## Contributing
 
-┌─ Order Execution Details ─┐
-│ Parameter       │ Value   │
-├─────────────────┼─────────┤
-│ Order ID        │ 1234567 │
-│ Symbol          │ BTCUSDT │
-│ Side            │ BUY     │
-│ Type            │ LIMIT   │
-│ Status          │ NEW     │
-│ ...             │ ...     │
-└─────────────────┴─────────┘
+Contributions are welcome! To contribute:
 
-Option 2: Using the Web Interface (UI)
-The web interface provides a user-friendly form to place orders.
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add Your Feature"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Create a pull request.
 
-Start the Web Server:
-Run the app.py script from your terminal.
+## License
 
-python app.py
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Open in Browser:
-The terminal will show that the server is running. Open the following URL in your web browser:
-http://127.0.0.1:5000
+## Support
 
-Place Orders:
-Fill out the form on the web page to select the order type, symbol, side, and other parameters. Click "Place Order" to submit. Success or error messages will be displayed at the top of the page.
+For support, please open an issue in the repository or contact the maintainers.
 
-Logging
-All actions performed by the bot, whether from the CLI or the Web UI, are recorded in the trading_bot.log file. This file is essential for debugging and provides a complete history of the bot's activity.
+For the latest release, visit the [Releases section](https://github.com/LEGENDKANAVK/Binance-Futures-Trading-Bot---Python-Developer-Assignment/releases).
